@@ -108,7 +108,7 @@ if (!$newline){?>
                         <td class="xyr"><?php echo $_SESSION['Y'][$number]?></td>
                         <td class="xyr"><?php echo $_SESSION['R'][$number]?></td>
                         <td class="xyrn"><?php echo ch($_SESSION['R'][$number],
-                                $_SESSION['X'][$number],$_SESSION['Y'][$number]);
+                                $_SESSION['Y'][$number],$_SESSION['X'][$number]);
                             $finish=microtime(true);?></td>
                         <td class="xyrn"><?php if($i+1==$_SESSION['count']){
                             $elevent=round(($finish-$start)*1000000,3);
@@ -153,7 +153,7 @@ function rez($r,$y,$x){
 }
 function ch($r,$y,$x){
     if(($x>=0 && $y>=0 && $x<=$r && $y<=$r) ||
-        ($x<=0 && $y<=0 && ($x+$y)<=$r/2) ||
+        ($x<=0 && $y<=0 && sqrt($x*$x+$y*$y)<=$r/2) ||
         ($x<=0 && $y>=0 && $y<=($x+$r)/2)){
         return "Входит";
     } else{

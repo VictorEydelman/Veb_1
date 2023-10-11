@@ -94,7 +94,6 @@
     <header>
         Эйдельман Виктор Аркадьевич, группа P3214, вариант № 2481
     </header>
-
     <div id="imgt">
         <div class="img">
             <svg height="240" width="240" xmlns="http://www.w3.org/2000/svg">
@@ -141,7 +140,7 @@
     </div>
 
     <div class="container" id="con">
-        <form action="table.php" name="php" method="post" id="php" target="graphics">
+        <form action="table.php" name="php" method="post" class="php" id="php" target="graphics">
             <div class="prov1" id="xblock">
                 <h3>Выберите X:</h3>
                 <select name="X" id="X">
@@ -160,7 +159,7 @@
 
             <div class="prov1" id="yblock">
                 <h3>Выберите Y:</h3>
-                <input type="text" id="Y" maxlength="5" size="10" name="y" placeholder=" от -5 до 3">
+                <input  maxlength="16" type="text" id="Y" size="10" name="y" placeholder=" от -5 до 3">
             </div>
 
             <div class="prov1" id="rblock">
@@ -183,7 +182,7 @@
     </div>
     <div id="frame" class="contain">
         <h2>Окно результата</h2>
-        <iframe name = "graphics" frameBorder="0" height="500" width="700" id="for"></iframe>
+        <iframe name = "graphics" frameBorder="0" height="500" width="1000" id="for"></iframe>
     </div>
     <script src="index.js"></script>
 </body>
