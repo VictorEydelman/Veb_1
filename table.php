@@ -140,6 +140,7 @@ function prov($r,$x,$y){
     } else if ($y>3 || $y<-5){
         return false;
     } else{
+        if (preg_match("-5.[0][1-9]",))
         return rez($r,$x,$y);
     }
 }

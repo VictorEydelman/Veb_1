@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded",function (){
+    document.getElementById("php").reset()
+    document.getElementById("imgt").style.height=document.getElementById("con").style.height
     if (typeof subtrue === 'undefined') {
         subtrue=false;
         document.getElementById("submit").disabled=true
